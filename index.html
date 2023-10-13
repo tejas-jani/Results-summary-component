@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main  shadow-lg ">
+    <div class="left">
+      <h3 class="my-7 "> Your Result</h3>
+      <div class="circle">
+
+        <h1>
+          76
+        </h1>
+        <p>of 100</p>
+      </div>
+
+      <h1 class=" text-2xl my-5 max-[375px]:my-2 text-white">Great</h1>
+      <p class=" text-center pera text-sm">
+        You scored higher than 65% of<br class="inline max-[375px]:hidden"> the<br class=" hidden  max-[375px]:inline"> people who have taken <br class="inline max-[375px]:hidden"> these tests.
+      </p>
+      
+    </div>
+
+    <div class="right ">
+      <h3 class="sum   my-7 font-extrabold ">
+        Summary
+        </h2>
+
+        <div class="badge badge1">
+          <div class="flex  ">
+            <img class="icon mr-1" src="./assets/images/icon-reaction.svg">
+             Reaction 
+          </div>
+          <div class="point">80<span>/ 100</span></div>
+        </div>
+
+        <div class="badge badge2">
+          <div class="flex">
+            <img class="icon mr-1" src="./assets/images/icon-memory.svg">
+
+            Memory
+          </div>
+          <div class="point" > 92 <span >/ 100</span></div>
+        </div>
+
+        <div class="badge badge3">
+          <div class="flex">
+            <img class="icon mr-1" src="./assets/images/icon-verbal.svg">
+
+            Verbal
+          </div>
+          <div class="point"> 61 <span>/ 100</span></div>
+        </div>
+
+        <div class="badge badge4">
+          <div  class="flex">
+            <img class="icon mr-1" src="./assets/images/icon-visual.svg">
+
+            Visual
+          </div>
+          <div class="point">72 <span>/ 100</span></div>
+        </div>
+
+        <button class="btn">Continue</button>
+    </div>
+
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

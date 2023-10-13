@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf"),
+    url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf"),
+    url("./assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Hanken Grotesk;
+}
+body {
+  font-size: 18px;
+
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --Light_red: hsl(0, 100%, 67%);
+  --Orangey_yellow: hsl(39, 100%, 56%);
+  --Green_teal: hsl(166, 100%, 37%);
+  --Cobalt_blue: hsl(234, 85%, 45%);
+
+  /* ------------------gradiant------------------------- */
+  --Light_slate_blue_background: hsl(252, 100%, 67%);
+  --Light_royal_blue_background: hsl(241, 81%, 54%);
+  --Violet_blue_circle: hsla(256, 72%, 46%, 1);
+  --Persian_blue_circle: hsla(241, 72%, 46%, 0);
+
+  /*-------------------Natural--------------------- */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale_blue: hsl(221, 100%, 96%);
+  --Light_lavender: hsl(241, 100%, 89%);
+  --Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+.main {
+  display: flex;
+  width: 600px;
+  height: 450px;
+  background-color: var(--White);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    var(--Light_slate_blue_background),
+    var(--Light_royal_blue_background)
+  );
+  border-radius: 20px;
+  width: 50%;
+}
+
+.left h3 {
+  color: var(--Light_lavender);
+  font-weight: 500;
+}
+.right {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--White);
+}
+
+.circle {
+  background-image: linear-gradient(
+    var(--Violet_blue_circle),
+    var(--Persian_blue_circle)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+
+  width: 47%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+}
+
+.circle h1 {
+  font-size: 70px;
+  font-weight: 800;
+  color: var(--White);
+}
+.circle p {
+  margin-top: -18px;
+  color: var(--Light_lavender);
+  font-size: 14px;
+}
+
+.pera {
+  color: var(--Light_lavender);
+}
+
+/*----------------------- second------------------- */
+
+.sum {
+  color: var(--Dark_gray_blue);
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+:root {
+  --Badge: 85%;
+}
+.badge {
+  display: flex;
+  background-color: aquamarine;
+  justify-content: space-between;
+  width: var(--Badge);
+  margin-bottom: 15px;
+  border-radius: 6px;
+  padding: 10px;
+  align-items: center;
+}
+.icon {
+  display: inline;
+}
+
+:root {
+  --BLight_red: hsla(0, 100%, 67%, 0.073);
+  --BOrangey_yellow: hsla(39, 100%, 56%, 0.098);
+  --BGreen_teal: hsl(166, 100%, 37%, 0.073);
+  --BCobalt_blue: hsl(234, 85%, 45%, 0.073);
+}
+.badge1 {
+  color: var(--Light_red);
+  background-color: var(--BLight_red);
+}
+.badge2 {
+  color: var(--Orangey_yellow);
+  background-color: var(--BOrangey_yellow);
+}
+.badge3 {
+  color: var(--Green_teal);
+  background-color: var(--BGreen_teal);
+}
+.badge4 {
+  color: var(--Cobalt_blue);
+  background-color: var(--BCobalt_blue);
+}
+
+.btn {
+  background-color: #3f3f46;
+  color: var(--White);
+  width: var(--Badge);
+  padding: 15px 0;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: medium;
+  margin: 15px 0;
+}
+.btn:hover {
+  background-color: var(--Cobalt_blue);
+}
+.badge .point {
+  color: #3f3f46;
+}
+.badge span {
+  color: rgba(80, 79, 79, 0.744);
+}
+
+@media (max-width: 375px) {
+  .right,
+  .left {
+    width: 100%;
+    height: 450px;
+  }
+  .left {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 400px;
+  }
+  body {
+    font-size: 18px;
+    width: 100%;    
+    display: flex;  
+    align-items: flex-start;
+  }
+
+  .main { 
+    width: 100%;
+    height: auto;
+    row-gap: 20px;  
+    flex-direction: column; 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  
+  
+}
